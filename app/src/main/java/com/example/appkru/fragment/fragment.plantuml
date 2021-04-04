@@ -1,0 +1,138 @@
+@startuml
+
+title __FRAGMENT's Class Diagram__\n
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianFragment {
+          - context : Context
+          - laporanHarianArrayList : List<DatumLaporanHarian>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - tvKosong : TextView
+          + LaporanHarianFragment()
+          + fetchData()
+          + onCreate()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianRiwayatFragment {
+          - context : Context
+          - laporanHarianArrayList : List<DatumLaporanHarian>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - tvKosong : TextView
+          + LaporanHarianRiwayatFragment()
+          + fetchData()
+          + onCreate()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment {
+          - context : Context
+          - laporanHarianArrayList : List<DatumLaporanHarian>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - tvKosong : TextView
+          + LaporanHarianRiwayatSetorFragment()
+          + fetchData()
+          + onCreate()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianSetorFragment {
+          - context : Context
+          - laporanHarianArrayList : List<DatumLaporanHarian>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - tvKosong : TextView
+          + LaporanHarianSetorFragment()
+          + fetchData()
+          + onCreate()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.PremiFragment {
+          - context : Context
+          - datumPremiList : List<DatumPremi>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - tvKosong : TextView
+          + PremiFragment()
+          + fetchData()
+          + onCreate()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.PremiRiwayatFragment {
+          - context : Context
+          - datumPremiList : List<DatumPremi>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - tvKosong : TextView
+          + PremiRiwayatFragment()
+          + fetchData()
+          + onCreate()
+          + onCreateView()
+      }
+    }
+  }
+  
+
+  com.example.appkru.fragment.LaporanHarianFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.LaporanHarianRiwayatFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianRiwayatFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianRiwayatFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.LaporanHarianSetorFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianSetorFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianSetorFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.PremiFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.PremiFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.PremiFragment o-- com.example.appkru.adapter.PremiAdapter : premiAdapter
+  com.example.appkru.fragment.PremiRiwayatFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.PremiRiwayatFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.PremiRiwayatFragment o-- com.example.appkru.adapter.PremiAdapter : premiAdapter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

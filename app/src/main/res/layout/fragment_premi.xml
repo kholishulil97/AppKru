@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whiteBodyColor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_premi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_premi1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmer_item_premi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shimmer_animation_duration="1200">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/item_place_holder"/>
+            <include layout="@layout/item_place_holder"/>
+            <include layout="@layout/item_place_holder"/>
+            <include layout="@layout/item_place_holder"/>
+            <include layout="@layout/item_place_holder"/>
+        </LinearLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    <TextView
+        android:id="@+id/tv_item_pr_kosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:fontFamily="@font/open_sans_regular"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

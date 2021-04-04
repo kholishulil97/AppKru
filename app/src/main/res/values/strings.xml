@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppKru</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="invalid_nama_pengeluaran">Masukkan nama pengeluaran</string>
+    <string name="invalid_lokasi_pengeluaran">Masukkan lokasi pengeluaran</string>
+    <string name="invalid_nominal_pengeluaran">Masukkan nominal pengeluaran</string>
+    <string name="invalid_nominal2_pengeluaran">Masukkan nominal yang benar</string>
+    <string name="invalid_nama2_pengeluaran">Masukkan nama yang valid</string>
+</resources>

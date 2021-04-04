@@ -1,0 +1,555 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  namespace com.example.appkru {
+    class com.example.appkru.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.BottomNavigationBehavior {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.BuktiSetoranActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.KarcisActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.KontrolInputActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.KontrolInputLaporanActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LaporanHarianActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LaporanHarianSetorActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LaporanKontrolActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.MainActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.PengeluaranActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.PenumpangActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.PremiActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.SuratPerintahActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.TambahKarcisActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.KontrolBSAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanHarianAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanHarianPagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanKontrolAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PengeluaranAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PengeluaranBSAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PenumpangAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PremiAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PremiPagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace api {
+      class com.example.appkru.api.ApiClient {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace api {
+      interface com.example.appkru.api.ApiInterface {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianRiwayatFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.LaporanHarianSetorFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.PremiFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace fragment {
+      class com.example.appkru.fragment.PremiRiwayatFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace manger {
+      class com.example.appkru.manger.Constants {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace manger {
+      class com.example.appkru.manger.RequestHandler {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace manger {
+      class com.example.appkru.manger.SharedPrefManager {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.BuktiSetoran {
+      class com.example.appkru.model.BuktiSetoran.BuktiSetoran {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.BuktiSetoran {
+      class com.example.appkru.model.BuktiSetoran.DaftarPengeluaran {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.BuktiSetoran {
+      class com.example.appkru.model.BuktiSetoran.DatumBuktiSetoran {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.LaporanHarian {
+      class com.example.appkru.model.LaporanHarian.DatumLaporanHarian {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.LaporanHarian {
+      class com.example.appkru.model.LaporanHarian.LaporanHarian {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.LaporanKontrol {
+      class com.example.appkru.model.LaporanKontrol.DatumLaporanKontrol {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.LaporanKontrol {
+      class com.example.appkru.model.LaporanKontrol.LaporanKontrol {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Nominal {
+      class com.example.appkru.model.Nominal.DatumNominal {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Nominal {
+      class com.example.appkru.model.Nominal.Nominal {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Pengeluaran {
+      class com.example.appkru.model.Pengeluaran.DatumPengeluaran {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Pengeluaran {
+      class com.example.appkru.model.Pengeluaran.Pengeluaran {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Penumpang {
+      class com.example.appkru.model.Penumpang.DatumPenumpang {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Penumpang {
+      class com.example.appkru.model.Penumpang.Penumpang {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.PosKarcis {
+      class com.example.appkru.model.PosKarcis.DatumPosKarcis {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.PosKarcis {
+      class com.example.appkru.model.PosKarcis.PosKarcis {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Premi {
+      class com.example.appkru.model.Premi.DatumPremi {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.Premi {
+      class com.example.appkru.model.Premi.Premi {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.SP {
+      class com.example.appkru.model.SP.DatumSP {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.SP {
+      class com.example.appkru.model.SP.SP {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.User {
+      class com.example.appkru.model.User.DatumUser {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace model.User {
+      class com.example.appkru.model.User.User {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace printing {
+      class com.example.appkru.printing.ApplicationClass {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace printing {
+      class com.example.appkru.printing.DeviceListActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace printing {
+      class com.example.appkru.printing.UnicodeFormatter {
+      }
+    }
+  }
+  
+
+  com.example.appkru.activity.BottomNavigationBehavior -up-|> androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
+  com.example.appkru.activity.BuktiSetoranActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.BuktiSetoranActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.BuktiSetoranActivity o-- com.example.appkru.adapter.KontrolBSAdapter : kontrolBSAdapter
+  com.example.appkru.activity.BuktiSetoranActivity o-- com.example.appkru.adapter.PengeluaranBSAdapter : pengeluaranAdapter
+  com.example.appkru.activity.KarcisActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.KontrolInputActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.KontrolInputActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.KontrolInputLaporanActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.KontrolInputLaporanActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.LaporanHarianActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.LaporanHarianActivity o-- com.example.appkru.adapter.LaporanHarianPagerAdapter : laporanHarianPagerAdapter
+  com.example.appkru.activity.LaporanHarianSetorActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.LaporanHarianSetorActivity o-- com.example.appkru.adapter.LaporanHarianPagerAdapter : laporanHarianPagerAdapter
+  com.example.appkru.activity.LaporanKontrolActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.LaporanKontrolActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.LaporanKontrolActivity o-- com.example.appkru.adapter.LaporanKontrolAdapter : laporanKontrolAdapter
+  com.example.appkru.activity.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.MainActivity .up.|> com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
+  com.example.appkru.activity.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.MainActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.PengeluaranActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.PengeluaranActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.PengeluaranActivity o-- com.example.appkru.adapter.PengeluaranAdapter : pengeluaranAdapter
+  com.example.appkru.activity.PenumpangActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.PenumpangActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.PenumpangActivity o-- com.example.appkru.adapter.PenumpangAdapter : penumpangAdapter
+  com.example.appkru.activity.PremiActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.PremiActivity o-- com.example.appkru.adapter.PremiPagerAdapter : premiPagerAdapter
+  com.example.appkru.activity.SuratPerintahActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.SuratPerintahActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.TambahKarcisActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.TambahKarcisActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.adapter.KontrolBSAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.LaporanHarianAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.LaporanHarianPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+  com.example.appkru.adapter.LaporanKontrolAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PengeluaranAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PengeluaranAdapter o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.adapter.PengeluaranBSAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PenumpangAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PremiAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PremiPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+  com.example.appkru.fragment.LaporanHarianFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.LaporanHarianRiwayatFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianRiwayatFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianRiwayatFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianRiwayatSetorFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.LaporanHarianSetorFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.LaporanHarianSetorFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.LaporanHarianSetorFragment o-- com.example.appkru.adapter.LaporanHarianAdapter : laporanHarianAdapter
+  com.example.appkru.fragment.PremiFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.PremiFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.PremiFragment o-- com.example.appkru.adapter.PremiAdapter : premiAdapter
+  com.example.appkru.fragment.PremiRiwayatFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appkru.fragment.PremiRiwayatFragment o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.fragment.PremiRiwayatFragment o-- com.example.appkru.adapter.PremiAdapter : premiAdapter
+  com.example.appkru.printing.ApplicationClass -up-|> android.app.Application
+  com.example.appkru.printing.DeviceListActivity -up-|> android.app.Activity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,275 @@
+@startuml
+
+title __ADAPTER's Class Diagram__\n
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.KontrolBSAdapter {
+          - listLaporanKontrol : List<DatumLaporanKontrol>
+          - mContext : Context
+          + KontrolBSAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.KontrolBSAdapter.LHViewHolder {
+          - tvNama : TextView
+          - tvNominal : TextView
+          + LHViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanHarianAdapter {
+          - listLaporanHarian : List<DatumLaporanHarian>
+          - mContext : Context
+          - myDialog : Dialog
+          + LaporanHarianAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanHarianAdapter.LHViewHolder {
+          - llLPItem : LinearLayout
+          - tvNominal : TextView
+          - tvNopol : TextView
+          - tvTanggal : TextView
+          + LHViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanHarianPagerAdapter {
+          - listFragment : List<Fragment>
+          - listTitle : List<String>
+          + LaporanHarianPagerAdapter()
+          + TambahFragment()
+          + getCount()
+          + getItem()
+          + getPageTitle()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanKontrolAdapter {
+          - listLaporanKontrol : List<DatumLaporanKontrol>
+          - mContext : Context
+          - myDialog : Dialog
+          + LaporanKontrolAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.LaporanKontrolAdapter.LHViewHolder {
+          - llLPItem : LinearLayout
+          - tvNopol : TextView
+          - tvPos : TextView
+          - tvTanggal : TextView
+          + LHViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PengeluaranAdapter {
+          - awesomeValidation : AwesomeValidation
+          - listPengeluaran : List<DatumPengeluaran>
+          - mContext : Context
+          + PengeluaranAdapter()
+          + deleteData()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+          + updateData()
+          - editPengeluaran()
+          - hapusPengeluaran()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PengeluaranAdapter.LHViewHolder {
+          - ivEditPengeluaran : ImageView
+          - ivHapusPengeluaran : ImageView
+          - tvKeterangan : TextView
+          - tvLokasi : TextView
+          - tvNama : TextView
+          - tvNominal : TextView
+          - tvTanggal : TextView
+          - tvWaktu : TextView
+          + LHViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PengeluaranBSAdapter {
+          - listPengeluaran : List<DaftarPengeluaran>
+          - mContext : Context
+          + PengeluaranBSAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PengeluaranBSAdapter.LHViewHolder {
+          - tvNama : TextView
+          - tvNominal : TextView
+          + LHViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PenumpangAdapter {
+          - listPenumpang : List<DatumPenumpang>
+          - mContext : Context
+          + PenumpangAdapter()
+          + PenumpangAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PenumpangAdapter.LHViewHolder {
+          - tvID : TextView
+          - tvNominal : TextView
+          - tvPosNaik : TextView
+          - tvPosTurun : TextView
+          - tvWktTransaksi : TextView
+          + LHViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PremiAdapter {
+          - listPremi : List<DatumPremi>
+          - mContext : Context
+          - myDialog : Dialog
+          + PremiAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PremiAdapter.PremiViewHolder {
+          - ivItem : ImageView
+          - llLPItem : LinearLayout
+          - tvNominal : TextView
+          - tvNopol : TextView
+          - tvTanggal : TextView
+          + PremiViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace adapter {
+      class com.example.appkru.adapter.PremiPagerAdapter {
+          - listFragment : List<Fragment>
+          - listTitle : List<String>
+          + PremiPagerAdapter()
+          + TambahFragment()
+          + getCount()
+          + getItem()
+          + getPageTitle()
+      }
+    }
+  }
+  
+
+  com.example.appkru.adapter.KontrolBSAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.KontrolBSAdapter +-down- com.example.appkru.adapter.KontrolBSAdapter.LHViewHolder
+  com.example.appkru.adapter.KontrolBSAdapter.LHViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.LaporanHarianAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.LaporanHarianAdapter +-down- com.example.appkru.adapter.LaporanHarianAdapter.LHViewHolder
+  com.example.appkru.adapter.LaporanHarianAdapter.LHViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.LaporanHarianPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+  com.example.appkru.adapter.LaporanKontrolAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.LaporanKontrolAdapter +-down- com.example.appkru.adapter.LaporanKontrolAdapter.LHViewHolder
+  com.example.appkru.adapter.LaporanKontrolAdapter.LHViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.PengeluaranAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PengeluaranAdapter o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.adapter.PengeluaranAdapter +-down- com.example.appkru.adapter.PengeluaranAdapter.LHViewHolder
+  com.example.appkru.adapter.PengeluaranAdapter.LHViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.PengeluaranBSAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PengeluaranBSAdapter +-down- com.example.appkru.adapter.PengeluaranBSAdapter.LHViewHolder
+  com.example.appkru.adapter.PengeluaranBSAdapter.LHViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.PenumpangAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PenumpangAdapter +-down- com.example.appkru.adapter.PenumpangAdapter.LHViewHolder
+  com.example.appkru.adapter.PenumpangAdapter.LHViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.PremiAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appkru.adapter.PremiAdapter +-down- com.example.appkru.adapter.PremiAdapter.PremiViewHolder
+  com.example.appkru.adapter.PremiAdapter.PremiViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appkru.adapter.PremiPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

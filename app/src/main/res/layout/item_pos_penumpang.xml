@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pos_pnp_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Jml. Pengeluaran"
+                android:textSize="24sp"
+                android:paddingLeft="10dp"
+                android:textColor="#7d7e7e"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_pos_pnp_jml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:paddingLeft="10dp"
+                        android:textColor="#7d7e7e"/>
+
+    </RelativeLayout>

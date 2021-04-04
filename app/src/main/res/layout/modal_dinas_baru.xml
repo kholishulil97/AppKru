@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siap Dinas?"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/contentTextColor"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView
+                android:id="@+id/iv_dia_dinas_baru_tutup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_close"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pastikan semua elemen dan ketentuan dinas sudah terpenuhi."
+            android:fontFamily="@font/open_sans_regular"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#7d7e7e"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dengan menambah dinas baru, maka Anda dianggap sudah siap menjalankan bus dan siap melayani penumpang."
+            android:fontFamily="@font/open_sans_regular"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#7d7e7e"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dia_dinas_baru_batal"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/button_custom_outline"
+            android:text="Batal"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:textColor="@color/xd_pink" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dia_dinas_baru_siap"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_custom"
+            android:text="Siap"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_regular"
+            android:textStyle="bold"
+            android:textColor="@color/textColorWhite"
+            android:layout_marginBottom="14dp"/>
+    </RelativeLayout>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

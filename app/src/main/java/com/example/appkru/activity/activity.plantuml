@@ -1,0 +1,395 @@
+@startuml
+
+title __ACTIVITY's Class Diagram__\n
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.BottomNavigationBehavior {
+          + BottomNavigationBehavior()
+          + BottomNavigationBehavior()
+          + layoutDependsOn()
+          + onNestedPreScroll()
+          + onStartNestedScroll()
+          - hideBottomNavigationView()
+          - showBottomNavigationView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.BuktiSetoranActivity {
+          - listLaporanKontrol : List<DatumLaporanKontrol>
+          - listPengeluaran : List<DaftarPengeluaran>
+          - recyclerView : RecyclerView
+          - recyclerView2 : RecyclerView
+          - swipeButton : SwipeButton
+          - tvJumlahPremi : TextView
+          - tvJumlahPremi2 : TextView
+          - tvKelas : TextView
+          - tvNamaKernet : TextView
+          - tvNamaKondektur : TextView
+          - tvNamaSopir : TextView
+          - tvNipNamaKernet : TextView
+          - tvNipNamaKondektur : TextView
+          - tvNipNamaSopir : TextView
+          - tvNopol : TextView
+          - tvPendapatanRit : TextView
+          - tvPendapatanRit2 : TextView
+          - tvPengeluaran : TextView
+          - tvPengeluaran2 : TextView
+          - tvPremiKernet : TextView
+          - tvPremiKondektur : TextView
+          - tvPremiSopir : TextView
+          - tvSetoranKasAngka : TextView
+          - tvSetoranKasTerbilang : TextView
+          - tvSisaPendapatan : TextView
+          - tvSisaPendapatan2 : TextView
+          - tvTrayek : TextView
+          - tvWaktuBerangkat : TextView
+          + fetchData()
+          + fetchDataKontrol()
+          + updateData()
+          # onCreate()
+          - initView()
+          - setData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.KarcisActivity {
+          - cvKarcis : CardView
+          - cvLaporanHarian : CardView
+          - cvPengeluaran : CardView
+          - cvPenumpang : CardView
+          - tvID : TextView
+          + setData()
+          # onCreate()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.KontrolInputActivity {
+          - awesomeValidation : AwesomeValidation
+          - btnLihat : AppCompatButton
+          - etKontrolInput : EditText
+          - progressDialog : ProgressDialog
+          + cekStatusKontrol()
+          + fetchData()
+          # onCreate()
+          - insertData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.KontrolInputLaporanActivity {
+          - chipIndisipliner : Chip
+          - chipKebersihan : Chip
+          - chipTarif : Chip
+          - chipTidakAda : Chip
+          - etJmlPendapatan : EditText
+          - etJmlPnp : EditText
+          - etKeterangan : EditText
+          - etNaik : EditText
+          - etTurun : EditText
+          - progressDialog : ProgressDialog
+          - swipeButton : SwipeButton
+          + onBackPressed()
+          # onCreate()
+          - insertData()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LaporanHarianActivity {
+          - tabLayout : TabLayout
+          - viewPager : ViewPager
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LaporanHarianSetorActivity {
+          - tabLayout : TabLayout
+          - viewPager : ViewPager
+          + onBackPressed()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LaporanKontrolActivity {
+          - awesomeValidation : AwesomeValidation
+          - btnTambah : AppCompatButton
+          - dialog : Dialog
+          - listLaporanKontrol : List<DatumLaporanKontrol>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - tvKosong : TextView
+          + fetchData()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.LoginActivity {
+          - btnLogin : AppCompatButton
+          - etPassword : EditText
+          - etUsername : EditText
+          - progressDialog : ProgressDialog
+          + initView()
+          + setData()
+          # onCreate()
+          - userLogin()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.MainActivity {
+          - bottomNavigationView : BottomNavigationView
+          - context : Context
+          - cvKarcis : CardView
+          - cvKontrol : CardView
+          - cvLapKontrol : CardView
+          - cvLaporanHarian : CardView
+          - cvPremi : CardView
+          - cvSuratPerintah : CardView
+          - cvUtama : CardView
+          - dialog : Dialog
+          - dinasID : String
+          - ivFotoBus : ImageView
+          - ivFotoProfil : CircleImageView
+          - layout : Layout
+          - mOnNavigationItemSelectedListener : OnNavigationItemSelectedListener
+          - progressDialog : ProgressDialog
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - swipeRefreshLayoutPH : SwipeRefreshLayout
+          - tVPassword : TextView
+          - tVUsername : TextView
+          - tvKelas : TextView
+          - tvNopol : TextView
+          - tvTrayek : TextView
+          + fetchData()
+          + fetchDataSP()
+          + fetchDataStatusLH()
+          + initView()
+          + insertLaporanHarian()
+          + onBackPressed()
+          + onNavigationItemSelected()
+          + setData()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.PengeluaranActivity {
+          - awesomeValidation : AwesomeValidation
+          - btnTambah : AppCompatButton
+          - dialog : Dialog
+          - listPengeluaran : List<DatumPengeluaran>
+          - recyclerView : RecyclerView
+          - shimmerLayout : ShimmerLayout
+          - swipeRefreshLayout : SwipeRefreshLayout
+          - tvKosong : TextView
+          + fetchData()
+          + insertData()
+          + tambahPengeluaran()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.PenumpangActivity {
+          - btnLaporan : AppCompatButton
+          - btnLihat : AppCompatButton
+          - layoutManager : LayoutManager
+          - penumpangArrayList : List<DatumPenumpang>
+          - posTurun : String
+          - progressDialog : ProgressDialog
+          - recyclerView : RecyclerView
+          - role_id : String
+          - spPenumpang : Spinner
+          - tvJumlah : TextView
+          - tvPos : TextView
+          + fetchData()
+          + fetchDataPenumpang()
+          + onBackPressed()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.PremiActivity {
+          - tabLayout : TabLayout
+          - viewPager : ViewPager
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.SuratPerintahActivity {
+          - cvSP : CardView
+          - cvSPKosong : CardView
+          - ivBus : ImageView
+          - progressDialog : ProgressDialog
+          - tvKelas : TextView
+          - tvKelasKosong : TextView
+          - tvMenggantikan : TextView
+          - tvMulai : TextView
+          - tvNamaKruTtd : TextView
+          - tvNamaPengatur : TextView
+          - tvNipNama : TextView
+          - tvNipNamaPengganti : TextView
+          - tvNopol : TextView
+          - tvNopolKosong : TextView
+          - tvPosisi : TextView
+          - tvPosisiKruTtd : TextView
+          - tvPosisiPengatur : TextView
+          - tvTanggalMulai : TextView
+          - tvTanggalSurat : TextView
+          - tvTrayek : TextView
+          - tvTrayekKosong : TextView
+          + fetchData()
+          + initView()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.appkru {
+    namespace activity {
+      class com.example.appkru.activity.TambahKarcisActivity {
+          ~ printingCallback : PrintingCallback
+          - btnDiaBayar : AppCompatButton
+          - btnHubungkan : AppCompatButton
+          - btnTambah : AppCompatButton
+          - chipHarga1 : Chip
+          - chipHarga2 : Chip
+          - chipHarga3 : Chip
+          - chipHarga4 : Chip
+          - chipHargaPas : Chip
+          - dialog : Dialog
+          - jmlPnp : String
+          - karcisID : String
+          - kodeTrayek : String
+          - laporanHarianID : String
+          - namanipKondektur : String
+          - nopolBus : String
+          - posNaik : String
+          - posTurun : String
+          - printing : Printing
+          - progressDialog : ProgressDialog
+          - spKarcis : Spinner
+          - spKarcisTurun : Spinner
+          - spPenumpang : Spinner
+          - tanggalTransaksi : String
+          - tarif : String
+          - trayekID : String
+          - tvDiaHargaBayar : TextView
+          - tvDiaKembalian : TextView
+          - tvHarga : TextView
+          - tvStatusPrinter : TextView
+          - waktuTransaksi : String
+          + btnPairUnpair()
+          + btnPrint()
+          + fetchData()
+          + fetchDataInvoice()
+          + fetchDataNominal()
+          + insertData()
+          # onActivityResult()
+          # onCreate()
+          - getSomePrintables()
+          - getTestPrintable()
+          - initListeners()
+          - initViews()
+          - printSomePrintable()
+          - printTestPrintable()
+      }
+    }
+  }
+  
+
+  com.example.appkru.activity.BottomNavigationBehavior -up-|> androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
+  com.example.appkru.activity.BuktiSetoranActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.BuktiSetoranActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.BuktiSetoranActivity o-- com.example.appkru.adapter.KontrolBSAdapter : kontrolBSAdapter
+  com.example.appkru.activity.BuktiSetoranActivity o-- com.example.appkru.adapter.PengeluaranBSAdapter : pengeluaranAdapter
+  com.example.appkru.activity.KarcisActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.KontrolInputActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.KontrolInputActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.KontrolInputLaporanActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.KontrolInputLaporanActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.LaporanHarianActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.LaporanHarianActivity o-- com.example.appkru.adapter.LaporanHarianPagerAdapter : laporanHarianPagerAdapter
+  com.example.appkru.activity.LaporanHarianSetorActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.LaporanHarianSetorActivity o-- com.example.appkru.adapter.LaporanHarianPagerAdapter : laporanHarianPagerAdapter
+  com.example.appkru.activity.LaporanKontrolActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.LaporanKontrolActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.LaporanKontrolActivity o-- com.example.appkru.adapter.LaporanKontrolAdapter : laporanKontrolAdapter
+  com.example.appkru.activity.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.MainActivity .up.|> com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
+  com.example.appkru.activity.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.MainActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.PengeluaranActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.PengeluaranActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.PengeluaranActivity o-- com.example.appkru.adapter.PengeluaranAdapter : pengeluaranAdapter
+  com.example.appkru.activity.PenumpangActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.PenumpangActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.PenumpangActivity o-- com.example.appkru.adapter.PenumpangAdapter : penumpangAdapter
+  com.example.appkru.activity.PremiActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.PremiActivity o-- com.example.appkru.adapter.PremiPagerAdapter : premiPagerAdapter
+  com.example.appkru.activity.SuratPerintahActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.SuratPerintahActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+  com.example.appkru.activity.TambahKarcisActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appkru.activity.TambahKarcisActivity o-- com.example.appkru.api.ApiInterface : apiInterface
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
